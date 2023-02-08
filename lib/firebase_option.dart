@@ -22,16 +22,6 @@ class DefaultFirebaseOptions {
     );
   }
 
-  // static const FirebaseOptions web = FirebaseOptions(
-  //   apiKey: 'AIzaSyCx04JI8dA5cgJhQ5xGHAerJ66l33tr2dk',
-  //   appId: '1:1016648032088:web:b7c539f097a75b5ef84f2d',
-  //   messagingSenderId: '1016648032088',
-  //   projectId: 'quickmed-development',
-  //   authDomain: 'quickmed-development.firebaseapp.com',
-  //   storageBucket: 'quickmed-development.appspot.com',
-  //   measurementId: 'G-DP6M6MJX1F',
-  // );
-
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: '',
     appId: '',
