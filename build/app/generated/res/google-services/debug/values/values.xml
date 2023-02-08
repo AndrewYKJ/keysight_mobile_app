@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">563521192201-jjchvcko5voa627p3804k0rqkrenanmk.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">563521192201</string>
+    <string name="google_api_key" translatable="false">AIzaSyBo6WO_JFQ4SDDJdGh86Ur3IhHX4uwv7Bc</string>
+    <string name="google_app_id" translatable="false">1:563521192201:android:1e23df43d791a8368553d8</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBo6WO_JFQ4SDDJdGh86Ur3IhHX4uwv7Bc</string>
+    <string name="google_storage_bucket" translatable="false">keysight-pma.appspot.com</string>
+    <string name="project_id" translatable="false">keysight-pma</string>
+</resources>

@@ -1,0 +1,897 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.keysight.pathwave.staging.pma"
+4    android:versionCode="100"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:66:5-66
+14-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:66:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:67:5-79
+15-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:67:22-76
+16
+17    <queries>
+17-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:51:5-64:15
+18        <intent>
+18-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:52:9-57:18
+19            <action android:name="android.intent.action.VIEW" />
+19-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:53:13-65
+19-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:53:21-62
+20
+21            <category android:name="android.intent.category.DEFAULT" />
+21-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:54:13-72
+21-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:54:23-69
+22            <category android:name="android.intent.category.BROWSABLE" />
+22-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:55:13-74
+22-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:55:23-71
+23
+24            <data android:scheme="com.keysight.pathwave.staging.pma" />
+24-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:56:13-72
+24-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:56:19-69
+25        </intent>
+26        <intent>
+26-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:58:9-63:18
+27            <action android:name="android.intent.action.VIEW" />
+27-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:53:13-65
+27-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:53:21-62
+28
+29            <category android:name="android.intent.category.DEFAULT" />
+29-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:54:13-72
+29-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:54:23-69
+30            <category android:name="android.intent.category.APP_BROWSER" />
+30-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:61:13-76
+30-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:61:23-73
+31
+32            <data android:scheme="com.keysight.pathwave.staging.pma" />
+32-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:56:13-72
+32-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:56:19-69
+33        </intent>
+34        <intent>
+34-->[net.openid:appauth:0.11.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/ed794b1b925a6b43e29a781f9d42608a/jetified-appauth-0.11.1/AndroidManifest.xml:25:9-31:18
+35            <action android:name="android.intent.action.VIEW" />
+35-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:53:13-65
+35-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:53:21-62
+36
+37            <category android:name="android.intent.category.BROWSABLE" />
+37-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:55:13-74
+37-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:55:23-71
+38
+39            <data android:scheme="https" />
+39-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:56:13-72
+39-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:56:19-69
+40        </intent>
+41    </queries>
+42
+43    <uses-permission android:name="android.permission.WAKE_LOCK" />
+43-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:68:5-68
+43-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:68:22-65
+44    <uses-permission
+44-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:69:5-107
+45        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+45-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:69:22-78
+46        android:maxSdkVersion="28" />
+46-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:69:79-105
+47    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+47-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:70:5-79
+47-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:70:22-77
+48    <uses-permission android:name="android.permission.CAMERA" />
+48-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:71:5-64
+48-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:71:22-62
+49    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+49-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:72:5-79
+49-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:72:22-77
+50    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+50-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:73:5-82
+50-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:73:22-79
+51    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+51-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-81
+51-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-78
+52    <uses-permission android:name="android.permission.VIBRATE" />
+52-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-66
+52-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-63
+53    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+53-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-81
+53-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-78
+54    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+54-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-79
+54-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-76
+55    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+55-->[com.google.firebase:firebase-messaging:23.0.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cc5885c86cb564feb47f4b224d833c5c/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:26:5-77
+55-->[com.google.firebase:firebase-messaging:23.0.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cc5885c86cb564feb47f4b224d833c5c/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:26:22-74
+56    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+56-->[com.google.firebase:firebase-messaging:23.0.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cc5885c86cb564feb47f4b224d833c5c/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:29:5-82
+56-->[com.google.firebase:firebase-messaging:23.0.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cc5885c86cb564feb47f4b224d833c5c/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:29:22-79
+57    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+57-->[com.google.android.gms:play-services-measurement-api:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/9b406f586989f2f82b8b8c25e9858573/jetified-play-services-measurement-api-21.1.0/AndroidManifest.xml:25:5-79
+57-->[com.google.android.gms:play-services-measurement-api:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/9b406f586989f2f82b8b8c25e9858573/jetified-play-services-measurement-api-21.1.0/AndroidManifest.xml:25:22-76
+58    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+58-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:12:5-76
+58-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:12:22-73
+59    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+59-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:14:5-75
+59-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:14:22-72
+60    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+60-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a161e35e3411be58957bcca0f56c401e/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:26:5-110
+60-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a161e35e3411be58957bcca0f56c401e/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:26:22-107
+61    <uses-feature
+61-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:25:5-27:36
+62        android:name="android.hardware.camera"
+62-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:26:9-47
+63        android:required="false" />
+63-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:27:9-33
+64    <uses-feature
+64-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:28:5-30:36
+65        android:name="android.hardware.camera.front"
+65-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:29:9-53
+66        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+66-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:30:9-33
+67    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+68    <uses-feature
+68-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:33:5-35:36
+69        android:name="android.hardware.camera.autofocus"
+69-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:34:9-57
+70        android:required="false" />
+70-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:35:9-33
+71    <uses-feature
+71-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:36:5-38:36
+72        android:name="android.hardware.camera.flash"
+72-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:37:9-53
+73        android:required="false" />
+73-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:38:9-33
+74    <uses-feature
+74-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:39:5-41:36
+75        android:name="android.hardware.screen.landscape"
+75-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:40:9-57
+76        android:required="false" />
+76-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:41:9-33
+77    <uses-feature
+77-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:42:5-44:36
+78        android:name="android.hardware.wifi"
+78-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:43:9-45
+79        android:required="false" />
+79-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:44:9-33
+80
+81    <application
+81-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:5:4-49:19
+82        android:name="com.keysight.pathwave.staging.pma.MainApplication"
+82-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:6:9-73
+83        android:allowBackup="false"
+83-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:12:9-36
+84        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+84-->[androidx.core:core:1.7.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/3f6d9ef3b65bfee01861f2e5d3bab0bd/core-1.7.0/AndroidManifest.xml:24:18-86
+85        android:debuggable="true"
+86        android:extractNativeLibs="false"
+87        android:icon="@mipmap/ic_launcher"
+87-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:8:9-43
+88        android:label="Keysight PMA"
+88-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:7:9-37
+89        android:requestLegacyExternalStorage="true"
+89-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:10:9-52
+90        android:roundIcon="@mipmap/ic_launcher_round"
+90-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:9:9-54
+91        android:usesCleartextTraffic="true" >
+91-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:11:9-44
+92        <activity
+92-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:14:9-43:20
+93            android:name="com.keysight.pathwave.staging.pma.MainActivity"
+93-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:15:13-41
+94            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+94-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:19:13-163
+95            android:exported="true"
+95-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:17:13-36
+96            android:hardwareAccelerated="true"
+96-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:20:13-47
+97            android:launchMode="singleTop"
+97-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:16:13-43
+98            android:theme="@style/LaunchTheme"
+98-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:18:13-47
+99            android:windowSoftInputMode="adjustResize" >
+99-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:21:13-55
+100            <meta-data
+100-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:23:13-25:54
+101                android:name="io.flutter.embedding.android.NormalTheme"
+101-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:24:15-70
+102                android:resource="@style/NormalTheme" />
+102-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:25:15-52
+103            <meta-data
+103-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:27:13-29:63
+104                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+104-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:28:15-79
+105                android:resource="@drawable/launch_background" />
+105-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:29:15-61
+106
+107            <!--
+108              <meta-data 
+109              android:name="io.flutter.network-policy"
+110              android:resource="@xml/network_security_config"/>
+111            -->
+112
+113            <meta-data
+113-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:35:13-37:57
+114                android:name="com.google.firebase.messaging.default_notification_channel_id"
+114-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:36:15-91
+115                android:value="high_importance_channel" />
+115-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:37:15-54
+116
+117            <intent-filter>
+117-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:39:13-42:29
+118                <action android:name="android.intent.action.MAIN" />
+118-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:40:17-68
+118-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:40:25-66
+119
+120                <category android:name="android.intent.category.LAUNCHER" />
+120-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:41:17-76
+120-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:41:27-74
+121            </intent-filter>
+122        </activity>
+123        <!--
+124             Don't delete the meta-data below.
+125             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+126        -->
+127        <meta-data
+127-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:46:9-48:33
+128            android:name="flutterEmbedding"
+128-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:47:13-44
+129            android:value="2" />
+129-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:48:13-30
+130
+131        <service
+131-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-15:72
+132            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+132-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-107
+133            android:exported="false"
+133-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+134            android:permission="android.permission.BIND_JOB_SERVICE" />
+134-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-69
+135        <service
+135-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-22:19
+136            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+136-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-97
+137            android:exported="false" >
+137-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+138            <intent-filter>
+138-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+139                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+139-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
+139-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
+140            </intent-filter>
+141        </service>
+142
+143        <receiver
+143-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:24:9-31:20
+144            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+144-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-98
+145            android:exported="true"
+145-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-36
+146            android:permission="com.google.android.c2dm.permission.SEND" >
+146-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-73
+147            <intent-filter>
+147-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
+148                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+148-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
+148-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
+149            </intent-filter>
+150        </receiver>
+151
+152        <service
+152-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:33:9-37:19
+153            android:name="com.google.firebase.components.ComponentDiscoveryService"
+153-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:33:18-89
+154            android:directBootAware="true"
+154-->[com.google.firebase:firebase-common:20.1.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:35:13-43
+155            android:exported="false" >
+155-->[com.google.firebase:firebase-messaging:23.0.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cc5885c86cb564feb47f4b224d833c5c/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:55:13-37
+156            <meta-data
+156-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36:85
+157                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+157-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:35:17-128
+158                android:value="com.google.firebase.components.ComponentRegistrar" />
+158-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:36:17-82
+159            <meta-data
+159-->[:firebase_analytics] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:85
+160                android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar"
+160-->[:firebase_analytics] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-128
+161                android:value="com.google.firebase.components.ComponentRegistrar" />
+161-->[:firebase_analytics] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-82
+162            <meta-data
+162-->[:firebase_core] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+163                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+163-->[:firebase_core] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+164                android:value="com.google.firebase.components.ComponentRegistrar" />
+164-->[:firebase_core] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+165            <meta-data
+165-->[com.google.firebase:firebase-messaging:23.0.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cc5885c86cb564feb47f4b224d833c5c/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:56:13-58:85
+166                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+166-->[com.google.firebase:firebase-messaging:23.0.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cc5885c86cb564feb47f4b224d833c5c/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:57:17-119
+167                android:value="com.google.firebase.components.ComponentRegistrar" />
+167-->[com.google.firebase:firebase-messaging:23.0.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cc5885c86cb564feb47f4b224d833c5c/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:58:17-82
+168            <meta-data
+168-->[com.google.firebase:firebase-datatransport:18.1.5] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/4f0eeb84eac9b5266751edef5dc940de/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:28:13-30:85
+169                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+169-->[com.google.firebase:firebase-datatransport:18.1.5] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/4f0eeb84eac9b5266751edef5dc940de/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:29:17-115
+170                android:value="com.google.firebase.components.ComponentRegistrar" />
+170-->[com.google.firebase:firebase-datatransport:18.1.5] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/4f0eeb84eac9b5266751edef5dc940de/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:30:17-82
+171            <meta-data
+171-->[com.google.android.gms:play-services-measurement-api:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/9b406f586989f2f82b8b8c25e9858573/jetified-play-services-measurement-api-21.1.0/AndroidManifest.xml:31:13-33:85
+172                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+172-->[com.google.android.gms:play-services-measurement-api:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/9b406f586989f2f82b8b8c25e9858573/jetified-play-services-measurement-api-21.1.0/AndroidManifest.xml:32:17-139
+173                android:value="com.google.firebase.components.ComponentRegistrar" />
+173-->[com.google.android.gms:play-services-measurement-api:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/9b406f586989f2f82b8b8c25e9858573/jetified-play-services-measurement-api-21.1.0/AndroidManifest.xml:33:17-82
+174            <meta-data
+174-->[com.google.firebase:firebase-installations:17.0.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
+175                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+175-->[com.google.firebase:firebase-installations:17.0.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
+176                android:value="com.google.firebase.components.ComponentRegistrar" />
+176-->[com.google.firebase:firebase-installations:17.0.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
+177        </service>
+178
+179        <provider
+179-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:39:9-43:38
+180            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+180-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-102
+181            android:authorities="com.keysight.pathwave.staging.pma.flutterfirebasemessaginginitprovider"
+181-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-88
+182            android:exported="false"
+182-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-37
+183            android:initOrder="99" />
+183-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:43:13-35
+184
+185        <activity
+185-->[:url_launcher_android] /Users/andrewyap/Documents/strongbyte/keysight/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+186            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+186-->[:url_launcher_android] /Users/andrewyap/Documents/strongbyte/keysight/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+187            android:exported="false"
+187-->[:url_launcher_android] /Users/andrewyap/Documents/strongbyte/keysight/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+188            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+188-->[:url_launcher_android] /Users/andrewyap/Documents/strongbyte/keysight/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+189
+190        <receiver
+190-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-15:40
+191            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+191-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-97
+192            android:exported="false" />
+192-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+193        <receiver
+193-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-25:20
+194            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+194-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-101
+195            android:exported="false" >
+195-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+196            <intent-filter>
+196-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-24:29
+197                <action android:name="android.intent.action.BOOT_COMPLETED" />
+197-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-79
+197-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-76
+198                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+198-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:21:17-84
+198-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:21:25-81
+199                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+199-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:22:17-82
+199-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:22:25-79
+200                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+200-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:23:17-82
+200-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:23:25-79
+201            </intent-filter>
+202        </receiver>
+203
+204        <uses-library
+204-->[androidx.window:window:1.0.0-beta04] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+205            android:name="androidx.window.extensions"
+205-->[androidx.window:window:1.0.0-beta04] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+206            android:required="false" />
+206-->[androidx.window:window:1.0.0-beta04] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+207        <uses-library
+207-->[androidx.window:window:1.0.0-beta04] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+208            android:name="androidx.window.sidecar"
+208-->[androidx.window:window:1.0.0-beta04] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+209            android:required="false" />
+209-->[androidx.window:window:1.0.0-beta04] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+210
+211        <receiver
+211-->[com.google.firebase:firebase-messaging:23.0.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cc5885c86cb564feb47f4b224d833c5c/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:32:9-39:20
+212            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+212-->[com.google.firebase:firebase-messaging:23.0.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cc5885c86cb564feb47f4b224d833c5c/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:33:13-78
+213            android:exported="true"
+213-->[com.google.firebase:firebase-messaging:23.0.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cc5885c86cb564feb47f4b224d833c5c/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:34:13-36
+214            android:permission="com.google.android.c2dm.permission.SEND" >
+214-->[com.google.firebase:firebase-messaging:23.0.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cc5885c86cb564feb47f4b224d833c5c/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:35:13-73
+215            <intent-filter>
+215-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
+216                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+216-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
+216-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
+217            </intent-filter>
+218        </receiver>
+219        <!--
+220             FirebaseMessagingService performs security checks at runtime,
+221             but set to not exported to explicitly avoid allowing another app to call it.
+222        -->
+223        <service
+223-->[com.google.firebase:firebase-messaging:23.0.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cc5885c86cb564feb47f4b224d833c5c/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:45:9-52:19
+224            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+224-->[com.google.firebase:firebase-messaging:23.0.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cc5885c86cb564feb47f4b224d833c5c/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:46:13-82
+225            android:directBootAware="true"
+225-->[com.google.firebase:firebase-messaging:23.0.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cc5885c86cb564feb47f4b224d833c5c/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:47:13-43
+226            android:exported="false" >
+226-->[com.google.firebase:firebase-messaging:23.0.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/cc5885c86cb564feb47f4b224d833c5c/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:48:13-37
+227            <intent-filter android:priority="-500" >
+227-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+228                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+228-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
+228-->[:firebase_messaging] /Users/andrewyap/Documents/strongbyte/keysight/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
+229            </intent-filter>
+230        </service>
+231        <service
+231-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/df1c69a4037fbf80daaaa37b72a0f7fc/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:29:9-35:19
+232            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+232-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/df1c69a4037fbf80daaaa37b72a0f7fc/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:30:13-103
+233            android:exported="false" >
+233-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/df1c69a4037fbf80daaaa37b72a0f7fc/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:31:13-37
+234            <meta-data
+234-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/df1c69a4037fbf80daaaa37b72a0f7fc/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:32:13-34:39
+235                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+235-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/df1c69a4037fbf80daaaa37b72a0f7fc/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:33:17-94
+236                android:value="cct" />
+236-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/df1c69a4037fbf80daaaa37b72a0f7fc/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:34:17-36
+237        </service>
+238        <service
+238-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/c7da859a9fed74993e1327e14fd0d4b2/jetified-transport-runtime-3.1.6/AndroidManifest.xml:26:9-30:19
+239            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+239-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/c7da859a9fed74993e1327e14fd0d4b2/jetified-transport-runtime-3.1.6/AndroidManifest.xml:27:13-117
+240            android:exported="false"
+240-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/c7da859a9fed74993e1327e14fd0d4b2/jetified-transport-runtime-3.1.6/AndroidManifest.xml:28:13-37
+241            android:permission="android.permission.BIND_JOB_SERVICE" >
+241-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/c7da859a9fed74993e1327e14fd0d4b2/jetified-transport-runtime-3.1.6/AndroidManifest.xml:29:13-69
+242        </service>
+243
+244        <receiver
+244-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/c7da859a9fed74993e1327e14fd0d4b2/jetified-transport-runtime-3.1.6/AndroidManifest.xml:32:9-34:40
+245            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+245-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/c7da859a9fed74993e1327e14fd0d4b2/jetified-transport-runtime-3.1.6/AndroidManifest.xml:33:13-132
+246            android:exported="false" />
+246-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/c7da859a9fed74993e1327e14fd0d4b2/jetified-transport-runtime-3.1.6/AndroidManifest.xml:34:13-37
+247
+248        <provider
+248-->[com.google.firebase:firebase-common:20.1.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:26:9-31:39
+249            android:name="com.google.firebase.provider.FirebaseInitProvider"
+249-->[com.google.firebase:firebase-common:20.1.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:27:13-77
+250            android:authorities="com.keysight.pathwave.staging.pma.firebaseinitprovider"
+250-->[com.google.firebase:firebase-common:20.1.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:28:13-72
+251            android:directBootAware="true"
+251-->[com.google.firebase:firebase-common:20.1.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:29:13-43
+252            android:exported="false"
+252-->[com.google.firebase:firebase-common:20.1.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:30:13-37
+253            android:initOrder="100" />
+253-->[com.google.firebase:firebase-common:20.1.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:31:13-36
+254
+255        <service
+255-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:18:9-28:19
+256            android:name="com.taobao.accs.ChannelService"
+256-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:19:13-58
+257            android:exported="true"
+257-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:20:13-36
+258            android:process=":channel" >
+258-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:21:13-39
+259            <intent-filter>
+259-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:22:13-24:29
+260                <action android:name="com.taobao.accs.intent.action.SERVICE" />
+260-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:23:17-80
+260-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:23:25-77
+261            </intent-filter>
+262            <intent-filter>
+262-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:25:13-27:29
+263                <action android:name="com.taobao.accs.intent.action.ELECTION" />
+263-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:26:17-81
+263-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:26:25-78
+264            </intent-filter>
+265        </service>
+266        <service
+266-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:29:9-35:19
+267            android:name="com.taobao.accs.data.MsgDistributeService"
+267-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:30:13-69
+268            android:exported="true" >
+268-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:31:13-36
+269            <intent-filter>
+269-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:32:13-34:29
+270                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+270-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:33:17-80
+270-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:33:25-77
+271            </intent-filter>
+272        </service>
+273
+274        <receiver
+274-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:37:9-55:20
+275            android:name="com.taobao.accs.EventReceiver"
+275-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:38:13-57
+276            android:exported="true"
+276-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:39:13-36
+277            android:process=":channel" >
+277-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:40:13-39
+278            <intent-filter>
+278-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:41:13-43:29
+279                <action android:name="android.intent.action.BOOT_COMPLETED" />
+279-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-79
+279-->[:flutter_local_notifications] /Users/andrewyap/Documents/strongbyte/keysight/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-76
+280            </intent-filter>
+281            <intent-filter>
+281-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:44:13-46:29
+282                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+282-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:45:17-79
+282-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:45:25-76
+283            </intent-filter>
+284            <intent-filter>
+284-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:47:13-49:29
+285                <action android:name="android.intent.action.USER_PRESENT" />
+285-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:48:17-77
+285-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:48:25-74
+286            </intent-filter>
+287            <intent-filter>
+287-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:50:13-54:29
+288                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+288-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:51:17-80
+288-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:51:25-77
+289
+290                <data android:scheme="package" />
+290-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:56:13-72
+290-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:56:19-69
+291            </intent-filter>
+292        </receiver>
+293        <receiver
+293-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:56:9-66:20
+294            android:name="com.taobao.accs.ServiceReceiver"
+294-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:57:13-59
+295            android:exported="true"
+295-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:58:13-36
+296            android:process=":channel" >
+296-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:59:13-39
+297            <intent-filter>
+297-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:60:13-62:29
+298                <action android:name="com.taobao.accs.intent.action.COMMAND" />
+298-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:61:17-80
+298-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:61:25-77
+299            </intent-filter>
+300            <intent-filter>
+300-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:63:13-65:29
+301                <action android:name="com.taobao.accs.intent.action.START_FROM_AGOO" />
+301-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:64:17-88
+301-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:64:25-85
+302            </intent-filter>
+303        </receiver>
+304
+305        <service
+305-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:68:9-72:42
+306            android:name="com.taobao.accs.internal.AccsJobService"
+306-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:69:13-67
+307            android:exported="false"
+307-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:70:13-37
+308            android:permission="android.permission.BIND_JOB_SERVICE"
+308-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:71:13-69
+309            android:process=":channel" />
+309-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:72:13-39
+310        <service
+310-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:73:9-76:42
+311            android:name="com.taobao.accs.ChannelService$KernelService"
+311-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:74:13-72
+312            android:exported="false"
+312-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:75:13-37
+313            android:process=":channel" />
+313-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:76:13-39
+314        <service
+314-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:77:9-83:19
+315            android:name="org.android.agoo.accs.AgooService"
+315-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:78:13-61
+316            android:exported="true" >
+316-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:79:13-36
+317            <intent-filter>
+317-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:32:13-34:29
+318                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+318-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:33:17-80
+318-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:33:25-77
+319            </intent-filter>
+320        </service>
+321        <service
+321-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:84:9-91:19
+322            android:name="com.umeng.message.UmengIntentService"
+322-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:85:13-64
+323            android:exported="true"
+323-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:86:13-36
+324            android:process=":channel" >
+324-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:87:13-39
+325            <intent-filter>
+325-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:88:13-90:29
+326                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+326-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:89:17-81
+326-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:89:25-78
+327            </intent-filter>
+328        </service>
+329        <service
+329-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:92:9-99:19
+330            android:name="com.umeng.message.XiaomiIntentService"
+330-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:93:13-65
+331            android:exported="true"
+331-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:94:13-36
+332            android:process=":channel" >
+332-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:95:13-39
+333            <intent-filter>
+333-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:88:13-90:29
+334                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+334-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:89:17-81
+334-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:89:25-78
+335            </intent-filter>
+336        </service>
+337
+338        <receiver
+338-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:101:9-113:20
+339            android:name="com.taobao.agoo.AgooCommondReceiver"
+339-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:102:13-63
+340            android:exported="true"
+340-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:103:13-36
+341            android:process=":channel" >
+341-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:104:13-39
+342            <intent-filter>
+342-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:105:13-107:29
+343                <action android:name="com.keysight.pathwave.staging.pma.intent.action.COMMAND" />
+343-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:106:17-81
+343-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:106:25-78
+344            </intent-filter>
+345            <intent-filter>
+345-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:50:13-54:29
+346                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+346-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:51:17-80
+346-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:51:25-77
+347
+348                <data android:scheme="package" />
+348-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:56:13-72
+348-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:56:19-69
+349            </intent-filter>
+350        </receiver>
+351
+352        <service
+352-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:115:9-122:19
+353            android:name="com.umeng.message.UmengMessageIntentReceiverService"
+353-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:116:13-79
+354            android:exported="true"
+354-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:117:13-36
+355            android:process=":channel" >
+355-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:118:13-39
+356            <intent-filter>
+356-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:119:13-121:29
+357                <action android:name="org.android.agoo.client.MessageReceiverService" />
+357-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:120:17-89
+357-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:120:25-86
+358            </intent-filter>
+359        </service>
+360
+361        <receiver
+361-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:124:9-126:40
+362            android:name="com.umeng.message.UmengNotificationReceiver"
+362-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:125:13-71
+363            android:exported="false" />
+363-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:126:13-37
+364
+365        <service
+365-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:128:9-147:19
+366            android:name="com.umeng.message.UmengMessageCallbackHandlerService"
+366-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:129:13-80
+367            android:exported="false"
+367-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:130:13-37
+368            android:permission="android.permission.BIND_JOB_SERVICE" >
+368-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:131:13-69
+369            <intent-filter>
+369-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:132:13-134:29
+370                <action android:name="com.umeng.messge.registercallback.action" />
+370-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:133:17-83
+370-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:133:25-80
+371            </intent-filter>
+372            <intent-filter>
+372-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:135:13-137:29
+373                <action android:name="com.umeng.message.enablecallback.action" />
+373-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:136:17-82
+373-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:136:25-79
+374            </intent-filter>
+375            <intent-filter>
+375-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:138:13-140:29
+376                <action android:name="com.umeng.message.disablecallback.action" />
+376-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:139:17-83
+376-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:139:25-80
+377            </intent-filter>
+378            <intent-filter>
+378-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:141:13-143:29
+379                <action android:name="com.umeng.message.message.handler.action" />
+379-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:142:17-83
+379-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:142:25-80
+380            </intent-filter>
+381            <intent-filter>
+381-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:144:13-146:29
+382                <action android:name="com.umeng.message.message.sendmessage.action" />
+382-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:145:17-87
+382-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:145:25-84
+383            </intent-filter>
+384        </service>
+385        <service
+385-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:148:9-151:72
+386            android:name="com.umeng.message.UmengDownloadResourceService"
+386-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:149:13-74
+387            android:exported="false"
+387-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:150:13-37
+388            android:permission="android.permission.BIND_JOB_SERVICE" />
+388-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:151:13-69
+389
+390        <provider
+390-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:153:9-156:40
+391            android:name="com.umeng.message.provider.MessageProvider"
+391-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:154:13-70
+392            android:authorities="com.keysight.pathwave.staging.pma.umeng.message"
+392-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:155:13-65
+393            android:exported="false" />
+393-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:156:13-37
+394
+395        <activity
+395-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:158:9-160:40
+396            android:name="com.umeng.message.UmengNotificationClickActivity"
+396-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:159:13-76
+397            android:exported="false" />
+397-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:160:13-37
+398        <activity
+398-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:161:9-168:75
+399            android:name="com.umeng.message.notify.UPushMessageNotifyActivity"
+399-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:162:13-79
+400            android:excludeFromRecents="true"
+400-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:163:13-46
+401            android:exported="false"
+401-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:164:13-37
+402            android:launchMode="singleTask"
+402-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:165:13-44
+403            android:screenOrientation="behind"
+403-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:166:13-47
+404            android:taskAffinity="com.keysight.pathwave.staging.pma.u_push"
+404-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:167:13-59
+405            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+405-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:168:13-72
+406
+407        <activity-alias
+407-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:170:9-178:26
+408            android:name="com.umeng.message.UMessageNotifyActivity"
+408-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:171:13-68
+409            android:exported="true"
+409-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:172:13-36
+410            android:targetActivity="com.umeng.message.notify.UPushMessageNotifyActivity"
+410-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:173:13-89
+411            android:taskAffinity="com.keysight.pathwave.staging.pma.u_push" >
+411-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:174:13-59
+412            <intent-filter>
+412-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:175:13-177:29
+413                <action android:name="com.umeng.message.action.notify" />
+413-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:176:17-74
+413-->[com.umeng.umsdk:push:6.5.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/defb8158919a0616ab967ea212d62331/jetified-push-6.5.1/AndroidManifest.xml:176:25-71
+414            </intent-filter>
+415        </activity-alias>
+416
+417        <activity
+417-->[com.google.android.gms:play-services-base:18.0.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+418            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+418-->[com.google.android.gms:play-services-base:18.0.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+419            android:exported="false"
+419-->[com.google.android.gms:play-services-base:18.0.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+420            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+420-->[com.google.android.gms:play-services-base:18.0.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+421        <activity
+421-->[net.openid:appauth:0.11.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/ed794b1b925a6b43e29a781f9d42608a/jetified-appauth-0.11.1/AndroidManifest.xml:35:9-40:77
+422            android:name="net.openid.appauth.AuthorizationManagementActivity"
+422-->[net.openid:appauth:0.11.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/ed794b1b925a6b43e29a781f9d42608a/jetified-appauth-0.11.1/AndroidManifest.xml:36:13-78
+423            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|keyboard|keyboardHidden"
+423-->[net.openid:appauth:0.11.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/ed794b1b925a6b43e29a781f9d42608a/jetified-appauth-0.11.1/AndroidManifest.xml:37:13-115
+424            android:exported="false"
+424-->[net.openid:appauth:0.11.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/ed794b1b925a6b43e29a781f9d42608a/jetified-appauth-0.11.1/AndroidManifest.xml:38:13-37
+425            android:launchMode="singleTask"
+425-->[net.openid:appauth:0.11.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/ed794b1b925a6b43e29a781f9d42608a/jetified-appauth-0.11.1/AndroidManifest.xml:39:13-44
+426            android:theme="@style/Theme.AppCompat.Translucent.NoTitleBar" />
+426-->[net.openid:appauth:0.11.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/ed794b1b925a6b43e29a781f9d42608a/jetified-appauth-0.11.1/AndroidManifest.xml:40:13-74
+427        <activity
+427-->[net.openid:appauth:0.11.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/ed794b1b925a6b43e29a781f9d42608a/jetified-appauth-0.11.1/AndroidManifest.xml:41:9-52:20
+428            android:name="net.openid.appauth.RedirectUriReceiverActivity"
+428-->[net.openid:appauth:0.11.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/ed794b1b925a6b43e29a781f9d42608a/jetified-appauth-0.11.1/AndroidManifest.xml:42:13-74
+429            android:exported="true" >
+429-->[net.openid:appauth:0.11.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/ed794b1b925a6b43e29a781f9d42608a/jetified-appauth-0.11.1/AndroidManifest.xml:43:13-36
+430            <intent-filter>
+430-->[net.openid:appauth:0.11.1] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/ed794b1b925a6b43e29a781f9d42608a/jetified-appauth-0.11.1/AndroidManifest.xml:44:13-51:29
+431                <action android:name="android.intent.action.VIEW" />
+431-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:53:13-65
+431-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:53:21-62
+432
+433                <category android:name="android.intent.category.DEFAULT" />
+433-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:54:13-72
+433-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:54:23-69
+434                <category android:name="android.intent.category.BROWSABLE" />
+434-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:55:13-74
+434-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:55:23-71
+435
+436                <data android:scheme="com.keysight.pathwave.staging.pma" />
+436-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:56:13-72
+436-->/Users/andrewyap/Documents/strongbyte/keysight/android/app/src/main/AndroidManifest.xml:56:19-69
+437            </intent-filter>
+438        </activity>
+439
+440        <receiver
+440-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a161e35e3411be58957bcca0f56c401e/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:29:9-33:20
+441            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+441-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a161e35e3411be58957bcca0f56c401e/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:30:13-85
+442            android:enabled="true"
+442-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a161e35e3411be58957bcca0f56c401e/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:31:13-35
+443            android:exported="false" >
+443-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a161e35e3411be58957bcca0f56c401e/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:32:13-37
+444        </receiver>
+445
+446        <service
+446-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a161e35e3411be58957bcca0f56c401e/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:35:9-38:40
+447            android:name="com.google.android.gms.measurement.AppMeasurementService"
+447-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a161e35e3411be58957bcca0f56c401e/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:36:13-84
+448            android:enabled="true"
+448-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a161e35e3411be58957bcca0f56c401e/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:37:13-35
+449            android:exported="false" />
+449-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a161e35e3411be58957bcca0f56c401e/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:38:13-37
+450        <service
+450-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a161e35e3411be58957bcca0f56c401e/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:39:9-43:72
+451            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+451-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a161e35e3411be58957bcca0f56c401e/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:40:13-87
+452            android:enabled="true"
+452-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a161e35e3411be58957bcca0f56c401e/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:41:13-35
+453            android:exported="false"
+453-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a161e35e3411be58957bcca0f56c401e/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:42:13-37
+454            android:permission="android.permission.BIND_JOB_SERVICE" />
+454-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a161e35e3411be58957bcca0f56c401e/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:43:13-69
+455
+456        <meta-data
+456-->[com.google.android.gms:play-services-basement:18.0.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/4a1e8147c3db656939cfc830651ce63e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+457            android:name="com.google.android.gms.version"
+457-->[com.google.android.gms:play-services-basement:18.0.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/4a1e8147c3db656939cfc830651ce63e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+458            android:value="@integer/google_play_services_version" />
+458-->[com.google.android.gms:play-services-basement:18.0.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/4a1e8147c3db656939cfc830651ce63e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+459
+460        <provider
+460-->[androidx.emoji2:emoji2:1.0.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/7485423dd457e7082d510d50f36707ee/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+461            android:name="androidx.startup.InitializationProvider"
+461-->[androidx.emoji2:emoji2:1.0.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/7485423dd457e7082d510d50f36707ee/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+462            android:authorities="com.keysight.pathwave.staging.pma.androidx-startup"
+462-->[androidx.emoji2:emoji2:1.0.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/7485423dd457e7082d510d50f36707ee/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+463            android:exported="false" >
+463-->[androidx.emoji2:emoji2:1.0.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/7485423dd457e7082d510d50f36707ee/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+464            <meta-data
+464-->[androidx.emoji2:emoji2:1.0.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/7485423dd457e7082d510d50f36707ee/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+465                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+465-->[androidx.emoji2:emoji2:1.0.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/7485423dd457e7082d510d50f36707ee/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+466                android:value="androidx.startup" />
+466-->[androidx.emoji2:emoji2:1.0.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/7485423dd457e7082d510d50f36707ee/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+467            <meta-data
+467-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/1200031033d07961a83d7174a91c7777/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+468                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+468-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/1200031033d07961a83d7174a91c7777/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+469                android:value="androidx.startup" />
+469-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/1200031033d07961a83d7174a91c7777/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+470        </provider>
+471
+472        <activity
+472-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:47:9-53:63
+473            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+473-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:48:13-74
+474            android:clearTaskOnLaunch="true"
+474-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:49:13-45
+475            android:screenOrientation="sensorLandscape"
+475-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:50:13-56
+476            android:stateNotNeeded="true"
+476-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:51:13-42
+477            android:theme="@style/zxing_CaptureTheme"
+477-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:52:13-54
+478            android:windowSoftInputMode="stateAlwaysHidden" />
+478-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/andrewyap/.gradle/caches/transforms-2/files-2.1/a305deeb5217ec76f10d4fffc30725aa/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:53:13-60
+479    </application>
+480
+481</manifest>

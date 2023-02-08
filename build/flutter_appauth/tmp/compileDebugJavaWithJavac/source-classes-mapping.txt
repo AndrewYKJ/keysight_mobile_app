@@ -1,0 +1,16 @@
+io/crossingthestreams/flutterappauth/InsecureConnectionBuilder.java
+ io.crossingthestreams.flutterappauth.InsecureConnectionBuilder
+io/crossingthestreams/flutterappauth/FlutterAppauthPlugin.java
+ io.crossingthestreams.flutterappauth.FlutterAppauthPlugin
+ io.crossingthestreams.flutterappauth.FlutterAppauthPlugin$1
+ io.crossingthestreams.flutterappauth.FlutterAppauthPlugin$2
+ io.crossingthestreams.flutterappauth.FlutterAppauthPlugin$3
+ io.crossingthestreams.flutterappauth.FlutterAppauthPlugin$4
+ io.crossingthestreams.flutterappauth.FlutterAppauthPlugin$5
+ io.crossingthestreams.flutterappauth.FlutterAppauthPlugin$6
+ io.crossingthestreams.flutterappauth.FlutterAppauthPlugin$AuthorizationTokenRequestParameters
+ io.crossingthestreams.flutterappauth.FlutterAppauthPlugin$EndSessionRequestParameters
+ io.crossingthestreams.flutterappauth.FlutterAppauthPlugin$PendingOperation
+ io.crossingthestreams.flutterappauth.FlutterAppauthPlugin$TokenRequestParameters
+io/crossingthestreams/flutterappauth/BuildConfig.java
+ io.crossingthestreams.flutterappauth.BuildConfig

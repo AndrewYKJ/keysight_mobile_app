@@ -1,0 +1,5 @@
+/Users/andrewyap/MobileAppsTools/flutter/.pub-cache/hosted/pub.dartlang.org/qr_code_scanner-0.7.0/android/src/main/kotlin/net/touchcapture/qr/flutterqr/CustomFramingRectBarcodeView.kt
+/Users/andrewyap/MobileAppsTools/flutter/.pub-cache/hosted/pub.dartlang.org/qr_code_scanner-0.7.0/android/src/main/kotlin/net/touchcapture/qr/flutterqr/QRView.kt
+/Users/andrewyap/MobileAppsTools/flutter/.pub-cache/hosted/pub.dartlang.org/qr_code_scanner-0.7.0/android/src/main/kotlin/net/touchcapture/qr/flutterqr/FlutterQrPlugin.kt
+/Users/andrewyap/MobileAppsTools/flutter/.pub-cache/hosted/pub.dartlang.org/qr_code_scanner-0.7.0/android/src/main/kotlin/net/touchcapture/qr/flutterqr/Shared.kt
+/Users/andrewyap/MobileAppsTools/flutter/.pub-cache/hosted/pub.dartlang.org/qr_code_scanner-0.7.0/android/src/main/kotlin/net/touchcapture/qr/flutterqr/QRViewFactory.kt
